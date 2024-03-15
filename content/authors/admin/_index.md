@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Damla Keşkekci
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+#name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Damla
+last_name: Keşkekci
 
 # Status emoji
 status:
@@ -17,34 +17,34 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: PhD Candidate
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+  - name: Scuola Normale Superiore
+    url: https://cosmos.sns.it/person/damla-keskekci/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+# bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - The far right in Western Europe
+  - Text analysis
+  - Network analysis
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: Ph.D. in Political Science and Sociology 
+      institution: Scuola Normale Superiore
+      year: 
+    - course: MA Research Training Program in Social Sciences
+      institution: Humboldt-Universität zu Berlin
+      year: 
+    - course: MA Sociology - European Societies
+      institution: Freie Universität Berlin
+      year: 
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -120,5 +120,5 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Damla Keşkekci is a PhD candidate in Political Science and Sociology at the Scuola Normale Superiore in Florence, and a member of the Center on Social Movement Studies (COSMOS). Her research focuses on the far-right social movements in Europe, and their interactions with other actors, such as political parties. In her doctoral project, she investigates the transnational diffusion of far-right social movements in Europe, with an interest in discourses, repertoires of contention, and organizational structures.
 {style="text-align: justify;"}
