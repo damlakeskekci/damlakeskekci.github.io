@@ -10,8 +10,8 @@ first_name: Damla
 last_name: Keşkekci
 
 # Status emoji
-status:
-  icon: ☕️
+# status:
+#   icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -22,7 +22,7 @@ role: PhD Candidate
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Scuola Normale Superiore
-    url: https://cosmos.sns.it/person/damla-keskekci/
+    url: https://www.sns.it/it/classe-di-scienze-politico-sociali/
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
@@ -30,7 +30,7 @@ organizations:
 # Interests to show in About widget
 interests:
   - The far right in Western Europe
-  - Social movement studies
+  - Social movements
   - Text analysis
   - Network analysis
   - Content analysis
@@ -125,8 +125,10 @@ highlight_name: true
 ---
 
 I am a final-year PhD Candidate in Political Science and Sociology at the Scuola Normale Superiore in Florence. I am currently visiting a visiting fellow at the Chair of Political Sociology and Social Policy at Humboldt-Universität zu Berlin.
+{style="text-align: justify;"}
 
 Prior to my PhD I completed master's degress at Freie Universität Berlin (Sociology: European Societies) and Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences), and received my bachelor of arts in Sociology from Hacettepe University in Ankara. I have been a visiting student at the University of Gothenburg and Universität Bremen.
+{style="text-align: justify;"}
 
 In my dissertation, I investigate the transnationalisation processes of far-right mobilisations in Austria, Germany, and the United Kingdom. My research lies at the intersection of political sociology and (digital) media/communication studies. I am a mixed-methods researcher with a particular interest in text analysis and content analysis.
 {style="text-align: justify;"}
