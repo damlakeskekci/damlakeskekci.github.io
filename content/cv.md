@@ -22,37 +22,29 @@ sections:
           company_url: ''
           company_logo: sns_logo
           location: Florence, Italy
-          date_start: '2019-09-01'
+          date_start: '2019-11-01'
           date_end: ''
-          description: |2-
-              Thesis: Dynamics of Far-Right Transnationalisation in Western Europe
         - title: MA - Research Training Program in Social Sciences
           company: Humboldt-Universität zu Berlin
           company_url: ''
           company_logo: Huberlin-logo
           location: Berlin, Germany
-          date_start: '2018-09-01'
-          date_end: '2019-07-31'
-          description: |2-
-              Thesis: The Identitarian Movement in Germany: Claims, Repertoire and Resonance
+          date_start: '2018-10-01'
+          date_end: '2019-10-31'
         - title: MA - Sociology European Societies 
           company: Freie Universität Berlin
           company_url: ''
           company_logo: fulogo
           location: Berlin, Germany
-          date_start: '2015-09-01'
+          date_start: '2015-10-01'
           date_end: '2018-07-31'
-          description: |2-
-              Thesis: Changing Portrayals of Europe in the Turkish Grand National Assembly: A Mixed Methods Content Analysis of the Plenary Sessions in the Era of the AKP Rule (2002 – 2017)
         - title: BA - Political Science and Public Administration  
           company: Hacettepe Üniversitesi 
           company_url: ''
           company_logo: Hacettepe_Üniversitesi_Logosu
           location: Ankara, Turkey
-          date_start: '2011-09-01'
-          date_end: '2015-07-31'
-          description: |2-
-              Graduation Project: New Social Movements Theories: A Glance at Alain Touraine, Alberto Melucci, Jürgen Habermas, and James Jasper
+          date_start: '2011-10-01'
+          date_end: '2015-06-25'
     design:
       columns: '2'
   - block: experience
@@ -67,35 +59,37 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: Erasmus Traineeship
+          company: Humboldt-Universität zu Berlin
           company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
-          date_end: ''
-          description: |2-
-              Responsibilities include:
-
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
+          company_logo: Huberlin-logo
+          location: Berlin, Germany
+          date_start: '2024-04-01'
+          description: '[Chair of Political Sociology and Social Policy](https://www.bgss.hu-berlin.de/sowi_p52/en/research-and-teaching-areas/sozpol-en/politische-soziologie-und-sozialpolitik-en)'
+        - title: Research Fellow
+          company: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
           company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          company_logo: dezim
+          location: Berlin, Germany
+          date_start: '2021-03-01'
+          date_end: '2024-03-01'
+          description: '[RaMi – From the margins to the mainstream right-wing populist interpretations of (radical) Islam as a societal challenge in Europe and beyond (RaMi)](https://www.dezim-institut.de/institut/abteilung-konsens-konflikt/right-wing-populist-interpretations-of-radical-islam-as-a-societal-challenge-in-europe-and-beyond-rami/)'
+        - title: Student Assistant
+          company: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
+          company_url: ''
+          company_logo: dezim
+          location: Berlin, Germany
+          date_start: '2018-11-01'
+          date_end: '2019-10-01'
+          description: '[Consensus & Conflict Research Unit](https://www.dezim-institut.de/en/institute/consensus-and-conflict-department/)'
+        - title: Student Assistant
+          company: WZB Berlin Social Science Center
+          company_url: ''
+          company_logo: wzb2
+          location: Berlin, Germany
+          date_start: '2016-09-01'
+          date_end: '2017-10-01'
+          description: '[Global Governance Research Unit](https://www.wzb.eu/en/research/international-politics-and-law/global-governance)'
     design:
       columns: '2'
-  - block: skills
-    content:
-      title: Skills
-      text: ''
-  #     # Choose a user to display skills from (a folder name within `content/uthors/`)
-      username: admin
-      design:
-      columns: '1'
 ---
