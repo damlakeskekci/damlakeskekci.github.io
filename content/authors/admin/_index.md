@@ -29,7 +29,7 @@ organizations:
 
 # Interests to show in About widget
 interests:
-  - The far right in Western Europe
+  - Far-right in Western Europe
   - Social movements
   - Text analysis
   - Network analysis
