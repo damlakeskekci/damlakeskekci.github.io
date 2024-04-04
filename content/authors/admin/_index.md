@@ -124,7 +124,7 @@ social:
 highlight_name: true
 ---
 
-I am a final-year PhD Candidate in Political Science and Sociology at the Scuola Normale Superiore in Florence. I am currently visiting a visiting fellow at the Chair of Political Sociology and Social Policy at Humboldt-Universität zu Berlin.
+I am a final-year PhD Candidate in Political Science and Sociology at the Scuola Normale Superiore in Florence. I am currently a visiting fellow at the Chair of Political Sociology and Social Policy at Humboldt-Universität zu Berlin.
 {style="text-align: justify;"}
 
 Prior to my PhD I completed master's degress at Freie Universität Berlin (Sociology: European Societies) and Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences), and received my bachelor of arts in Sociology from Hacettepe University in Ankara. I have been a visiting student at the University of Gothenburg and Universität Bremen.
