@@ -22,7 +22,7 @@ role: PhD Candidate
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Scuola Normale Superiore
-    url: https://www.sns.it/it/classe-di-scienze-politico-sociali/
+    url: https://cosmos.sns.it/person/damla-keskekci/
 
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
