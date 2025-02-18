@@ -103,7 +103,9 @@ social:
     display:
       header: false
   - icon: bluesky
+    icon_pack: custom
     link: https://bsky.app/profile/damlakeskekci.bsky.social
+    label: Follow me on Bluesky
   # - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
   #   icon_pack: fas
   #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
