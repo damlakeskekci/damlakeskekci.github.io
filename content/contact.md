@@ -1,6 +1,6 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ''
+title: 'Contact'
 date: 2022-10-24
 type: landing
 
@@ -10,7 +10,6 @@ sections:
     id: section-1
     content:
       text: If you'd like to get in touch, please send an email to damla.keskekci@sns.it
-
 
 
 # sections:
