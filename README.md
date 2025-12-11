@@ -2,7 +2,7 @@
 
 [![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
 
-<h1 align="center">Build an Academic CV and Resumé That Stands Out</h1>
+<h1 align="center">Build an Academic CV and Resumé</h1>
 
 <p align="center">
   <strong>Your unfair advantage in academia and tech.</strong><br/>
