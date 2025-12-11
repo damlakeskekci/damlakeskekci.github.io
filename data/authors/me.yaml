@@ -2,115 +2,134 @@ schema: hugoblox/author/v1
 slug: me
 is_owner: true
 name:
-  display: Dr. Alex Johnson
-  given: Alex
-  family: Johnson
+  display: Dr. Damla Keşkekci
+  given: Damla
+  family: Keşkekci
   alternate: ''  # Example: 王伟
   pronunciation: ''  # Example: Wáng Wěi
-  pronouns: he/him
+#  pronouns: she/her
 postnominals:
   - PhD
-  - MIEEE
 status:
-  icon: "☕️"
-role: Senior AI Research Scientist
+  icon: ""
+role: Sociologist
 bio: |
-  Alex Johnson is a Senior AI Research Scientist at Meta AI. His research
-  has been published in top conferences like NeurIPS and ICML, with over
-  10,000 citations. Alex is passionate about pushing the boundaries of AI
-  while ensuring ethical development.
+  I am a recent PhD graduate in Political Science and Sociology from the Scuola Normale Superiore in Florence. Prior to my PhD I completed master's degress at Freie Universität Berlin (Sociology: European Societies) and Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences), and received my bachelor of arts in Sociology from Hacettepe University in Ankara. I have been a visiting fellow at the Humboldt-Universität zu Berlin, University of Gothenburg and Universität Bremen.
 
-affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+#affiliations:
+#  - name: Scuola Normale Superiore
+#    url: https://cosmos.sns.it/person/damla-keskekci/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:damla.keskekci@sns.it
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
-  - icon: brands/github
-    url: https://github.com/example
+  - icon: brands/bluesky
+    url: https://bsky.app/profile/damlakeskekci.bsky.social
+#  - icon: brands/github
+#    url: https://github.com/example
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://www.linkedin.com/in/damlakeskekci/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=P6AGcLkAAAAJ&hl=en&oi=ao
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0000-0003-4306-463X
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+  - Far-right in Western Europe
+  - Social movements
+  - Text analysis
+  - Network analysis
+  - Content analysis
 
 education:
-  - degree: PhD Computer Science
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
-    summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+  - degree: Ph.D. in Political Science and Sociology 
+    institution: Scuola Normale Superiore
+    #start: '2019-11-01'
+    end: '2025-11-15'
+  - degree: MA Research Training Program in Social Sciences
+    institution: Humboldt-Universität zu Berlin
+    start: 
+    end: '2019-10-31'
+  - degree: MA Sociology - European Societies
+    institution: Freie Universität Berlin
+    start: 
+    end: '2018-07-31'
+  - degree: BA - Political Science and Public Administration
+    institution: Hacettepe Üniversitesi 
+    icon: ''
+    location: Ankara, Turkey
+    end: '2015-06-25'
 
 experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
+  - role: Erasmus Traineeship
+    org: Humboldt-Universität zu Berlin
+    location: Berlin, Germany
+    start: '2024-04-01'
+    end: '2024-09-15'
     summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
+      [Chair of Political Sociology and Social Policy](https://www.sowi.hu-berlin.de/de/lehrbereiche/sozpol)
+  - role: Research Fellow
+    org: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
+    location: Berlin, Germany
+    end: '2024-03-01'
+    start: '2021-03-01'
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      [RaMi – From the margins to the mainstream right-wing populist interpretations of (radical) Islam as a societal challenge in Europe and beyond (RaMi)](https://www.dezim-institut.de/institut/abteilung-konsens-konflikt/right-wing-populist-interpretations-of-radical-islam-as-a-societal-challenge-in-europe-and-beyond-rami/)
+  - role: Student Assistant
+    org: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
+    location: Berlin, Germany
+    start: '2018-11-01'
+    end: '2019-10-01'
+    summary: |
+      [Consensus & Conflict Research Unit](https://www.dezim-institut.de/en/institute/consensus-and-conflict-department/)
+  - role: Student Assistant
+    org: WZB Berlin Social Science Center
+    location: Berlin, Germany
+    start: '2016-09-01'
+    end: '2017-10-01'
+    summary: |
+      [Global Governance Research Unit](https://www.wzb.eu/en/research/international-politics-and-law/global-governance)
 
 skills:
-  - name: Technical Skills
+  - name: Methods
     items:
-      - label: Pytho
-        level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
+      - label: Computational Social Science
+      - label: Network analysis
+      - label: Quantitative and qualitative content analysis
+      - label: TEXT-AS-DATA
+  - name: Languages
     items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
+      - label: Turkish (native/ C2)
+      - label: English (C2)
+      - label: German (B2/ C1)
+      #  level: 5
+#  - name: Research & Communication
+#    items:
+#      - label: Academic Writing
+#      - label: Conference Presentations
+#      - label: Event Organizations
+
+membership:
+  - name: Centre on Social Movement Studies (Cosmos)
+    url: https://cosmos.sns.it/person/damla-keskekci/
+  - name: Institute for Protest and Social Movements Research (Board member)
+    url: https://protestinstitut.eu/en/mitglieder/11292/
 
 languages:
+  - name: Turkish
+ #   level: 5
+    label: Native  
   - name: English
-    level: 5
-    label: Native
-  - name: Spanish
-    level: 4
+#    level: 5
     label: Fluent
+  - name: German
+#    level: 3.75
+    label: Intermediate
 
-awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+#awards:
+#  - title: Best Paper Award
+#    awarder: NeurIPS
+#    date: "2022-12-01"
+#    summary: Awarded for groundbreaking work on efficient training of large models.
+#    icon: hero/trophy

@@ -1,0 +1,56 @@
+{{/* layouts/_partials/hbx/blocks/resume-membership/block.html */}}
+
+{{/* Match the structure and styling of the built-in resume-skills block,
+    but use `membership` from data/authors/<username>.yaml instead. */}}
+
+{{ $block := . }}
+{{ $content := $block.content }}
+
+{{/* Username/slug, matching data/authors/<username>.yaml */}}
+{{ $username := $content.username | default "me" }}
+
+{{/* Load author data (where `membership` lives) */}}
+{{ $author := index site.Data.authors $username }}
+
+{{/* Default title if none set in cv.md */}}
+{{ $title := or $content.title "Memberships" }}
+
+{{/* Membership list from author data */}}
+{{ $memberships := $author.membership }}
+
+<section class="hb-block hb-resume-membership">
+
+  {{/* HEADER – this mirrors resume-skills header styling */}}
+  <div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+    <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+      {{ $title | markdownify | emojify }}
+    </div>
+
+    {{ with $content.text }}
+      <p>{{ . | markdownify | emojify }}</p>
+    {{ end }}
+  </div>
+
+  {{/* BODY – styled similar to skills list but simplified */}}
+  {{ with $memberships }}
+  <div class="flex flex-col items-start max-w-prose mx-auto gap-4 px-6 md:px-0">
+    {{ range . }}
+      <div class="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-tight">
+        {{ if .url }}
+          <a
+            href="{{ .url }}"
+            class="uppercase tracking-wide no-underline hover:underline"
+          >
+            {{ .name }}
+          </a>
+        {{ else }}
+          <span class="uppercase tracking-wide">
+            {{ .name }}
+          </span>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+{{ end }}
+
+</section>
