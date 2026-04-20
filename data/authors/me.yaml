@@ -14,7 +14,7 @@ status:
   icon: ""
 role: Sociologist
 bio: |
-  I am a recent PhD graduate in Political Science and Sociology from the Scuola Normale Superiore in Florence. Prior to my PhD I completed master's degress at Freie Universität Berlin (Sociology: European Societies) and Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences), and received my bachelor of arts in Sociology from Hacettepe University in Ankara. I have been a visiting fellow at the Humboldt-Universität zu Berlin, University of Gothenburg and Universität Bremen.
+  I am a recent PhD graduate in Political Science and Sociology from the Scuola Normale Superiore in Florence. Prior to my PhD I completed master's degress at Freie Universität Berlin (Sociology: European Societies) and Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences), and received my bachelor of arts in Sociology from Hacettepe University in Ankara, with a minor degree in Political Science and Public Administration. I have been a visiting fellow at the Humboldt-Universität zu Berlin, WZB Berlin Social Science Center, University of Gothenburg, DeZIM Institut, and Universität Bremen.
 
 #affiliations:
 #  - name: Scuola Normale Superiore
@@ -43,10 +43,12 @@ interests:
   - Content analysis
 
 education:
-  - degree: Ph.D. in Political Science and Sociology 
+  - degree: Ph.D. in Political Science and Sociology
     institution: Scuola Normale Superiore
     #start: '2019-11-01'
     end: '2025-11-15'
+    summary: |
+      Dissertation: *Dynamics of Far-Right Transnationalization*
   - degree: MA Research Training Program in Social Sciences
     institution: Humboldt-Universität zu Berlin
     start: 
@@ -55,8 +57,8 @@ education:
     institution: Freie Universität Berlin
     start: 
     end: '2018-07-31'
-  - degree: BA - Political Science and Public Administration
-    institution: Hacettepe Üniversitesi 
+  - degree: BA in Sociology (minor in Political Science and Public Administration)
+    institution: Hacettepe Üniversitesi
     icon: ''
     location: Ankara, Turkey
     end: '2015-06-25'

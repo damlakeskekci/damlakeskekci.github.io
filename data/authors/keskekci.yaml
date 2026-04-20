@@ -1,8 +1,7 @@
 schema: hugoblox/author/v1
-slug: me
-is_owner: true
+slug: keskekci
+is_owner: false
 name:
   display: Damla Keşkekci
   given: Damla
   family: Keşkekci
-

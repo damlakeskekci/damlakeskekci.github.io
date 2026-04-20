@@ -1,8 +1,7 @@
 schema: hugoblox/author/v1
-slug: me
-is_owner: true
+slug: sponholz
+is_owner: false
 name:
-  display: Anita Nissen
-  given: Anita
-  family: Nissen
-
+  display: Liriam Sponholz
+  given: Liriam
+  family: Sponholz
