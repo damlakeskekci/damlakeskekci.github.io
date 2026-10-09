@@ -2,6 +2,12 @@
 title: Publications
 cms_exclude: true
 
+# Hide the "x min read" estimate and the author boxes at the bottom of each page
+# (author profile pages are not published, so those boxes linked to 404s).
+cascade:
+  reading_time: false
+  profile: false
+
 # View.
 #   1 = List
 #   2 = Compact

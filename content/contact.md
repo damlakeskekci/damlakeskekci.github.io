@@ -9,7 +9,7 @@ sections:
   - block: markdown
     id: section-1
     content:
-      text: If you'd like to get in touch, please send an email to damla.keskekci@sns.it
+      text: If you'd like to get in touch, please send an email to [damla.keskekci@sns.it](mailto:damla.keskekci@sns.it).
 
 
 
