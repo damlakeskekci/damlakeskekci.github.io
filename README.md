@@ -10,13 +10,17 @@ Personal academic website of Dr. Damla Keşkekci, built with [Hugo](https://gohu
 - `content/publications/` – one folder per publication (`index.md` + `cite.bib`)
 - `content/teaching/` – one folder per course
 - `content/contact.md` – contact page
+- `*.de.md` files – German versions of the pages above; German profile in `data/authors_i18n/de/me.yaml`
+- `content/privacy*.md`, `content/impressum*.md` – privacy policy and legal notice (both languages)
 - `config/_default/params.yaml` – site-wide settings (name, footer, theme, analytics)
 
 ## Local preview
 
+Requires Hugo extended 0.167.0 (the version in `hugoblox.yaml`) and Node.js.
+
 ```bash
-pnpm install          # once, installs Tailwind CSS
-hugo server           # then open http://localhost:1313
+npm ci                # once, installs Tailwind CSS (use npm, not pnpm: Hugo needs the real tailwindcss script)
+hugo server           # then open http://localhost:1313 (German pages: /de/)
 ```
 
 The site is built and deployed to GitHub Pages automatically on every push to `main` (see `.github/workflows/deploy.yml`).

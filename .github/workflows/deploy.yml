@@ -37,10 +37,6 @@ jobs:
       with:
         node-version: ${{ env.NODE_VERSION }}
 
-    - name: Setup pnpm
-      if: hashFiles('package.json') != ''
-      uses: pnpm/action-setup@v6
-
     - name: Get Hugo Version
       id: hugo-version
       run: |
@@ -49,10 +45,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        # Install Tailwind CLI if package.json exists
+        # Install the Tailwind CSS CLI with npm (exact versions from package-lock.json).
+        # Hugo >= 0.164 only runs tailwindcss if node_modules/.bin/tailwindcss is a Node.js
+        # script; npm links the real script, while pnpm creates a shell wrapper Hugo rejects.
         if [ -f "package.json" ]; then
           echo "Installing Tailwind dependencies..."
-          pnpm install --no-frozen-lockfile || npm install
+          npm ci --no-audit --no-fund
         fi
 
     - name: Setup Hugo
@@ -61,26 +59,24 @@ jobs:
         hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
 
-      # Cache dependencies (Go modules, node_modules) - stable, rarely changes
+      # Cache Hugo's module cache. node_modules is deliberately not cached: it is installed
+      # fresh above, and restoring an old copy here would overwrite it.
     - uses: actions/cache@v4
       with:
         path: |
           /tmp/hugo_cache_runner/
-          node_modules/
-          modules/*/node_modules/
-        key: ${{ runner.os }}-hugo-deps-${{ hashFiles('**/go.mod', '**/package-lock.json',
-          '**/pnpm-lock.yaml') }}
+        key: ${{ runner.os }}-hugo-deps-v2-${{ hashFiles('**/go.mod') }}
         restore-keys: |
-          ${{ runner.os }}-hugo-deps-
+          ${{ runner.os }}-hugo-deps-v2-
 
       # Cache Hugo resources (processed images, CSS) - invalidates only when assets/config change
     - uses: actions/cache@v4
       with:
         path: resources/
-        key: ${{ runner.os }}-hugo-resources-${{ hashFiles('assets/**/*', 'config/**/*',
+        key: ${{ runner.os }}-hugo-resources-v2-${{ hashFiles('assets/**/*', 'config/**/*',
           'hugo.yaml', 'package.json') }}
         restore-keys: |
-          ${{ runner.os }}-hugo-resources-
+          ${{ runner.os }}-hugo-resources-v2-
 
     - name: Setup Pages
       id: pages
