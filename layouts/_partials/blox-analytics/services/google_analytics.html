@@ -1,0 +1,16 @@
+{{/*
+  Site override of the Hugo Blox Google Analytics partial.
+  The tags are inert (type="text/plain") until the visitor accepts the "analytics"
+  category in the consent banner (see hooks/body-end/cookie-consent.html).
+*/}}
+{{ $ga := site.Params.hugoblox.analytics.google.measurement_id | default "" }}
+{{ if hugo.IsProduction | and $ga }}
+<script type="text/plain" data-category="analytics" async data-src="https://www.googletagmanager.com/gtag/js?id={{ $ga }}"></script>
+<script type="text/plain" data-category="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', '{{ $ga }}');
+</script>
+{{ end }}

@@ -1,0 +1,86 @@
+{{/*
+  Opt-in consent banner (vanilla-cookieconsent v3.1.0, https://cookieconsent.orestbida.com, MIT).
+  Self-hosted from static/lib/cookieconsent/. Scripts marked type="text/plain" data-category="..."
+  only run after the visitor accepts that category.
+*/}}
+{{ $privacy := site.GetPage "/privacy" }}
+{{ $privacy_url := cond (ne $privacy nil) ($privacy.RelPermalink) "" }}
+<link rel="stylesheet" href="{{ "lib/cookieconsent/cookieconsent.css" | relURL }}" integrity="sha256-ygRrixsQlBByBZiOcJamh7JByO9fP+/l5UPtKNJmRsE=">
+<style>
+  #cc-main, .cc--darkmode #cc-main {
+    --cc-font-family: inherit;
+    --cc-btn-primary-color: #fff;
+    --cc-btn-primary-hover-color: #fff;
+    --cc-btn-primary-bg: var(--color-primary-600);
+    --cc-btn-primary-border-color: var(--color-primary-600);
+    --cc-btn-primary-hover-bg: var(--color-primary-700);
+    --cc-btn-primary-hover-border-color: var(--color-primary-700);
+    --cc-toggle-on-bg: var(--color-primary-600);
+  }
+  .cc-settings-link { background: none; border: 0; padding: 0; color: inherit; cursor: pointer; font: inherit; text-decoration: underline; }
+</style>
+<script defer src="{{ "lib/cookieconsent/cookieconsent.umd.js" | relURL }}" integrity="sha256-vG4vLmOB/AJbJ6awr7Wg4fxonG+fxAp4cIrbIFTvRXU="></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (!window.CookieConsent) return;
+
+    // Follow the site's light/dark mode (Hugo Blox toggles the "dark" class on <html>).
+    var root = document.documentElement;
+    var syncDark = function () { root.classList.toggle('cc--darkmode', root.classList.contains('dark')); };
+    syncDark();
+    new MutationObserver(syncDark).observe(root, { attributes: true, attributeFilter: ['class'] });
+
+    var privacy = '{{ $privacy_url }}';
+
+    CookieConsent.run({
+      revision: 1,
+      cookie: { name: 'cc_cookie', expiresAfterDays: 182 },
+      onChange: function (param) {
+        var changed = param.changedCategories || [];
+        if (changed.indexOf('analytics') !== -1 && !CookieConsent.acceptedCategory('analytics')) {
+          // Stop a running gtag from re-writing its cookies, then remove them.
+          if (typeof window.gtag === 'function') window.gtag('consent', 'update', { analytics_storage: 'denied' });
+          var host = window.location.hostname;
+          CookieConsent.eraseCookies([/^_ga/, '_gid'], '/', host);
+          CookieConsent.eraseCookies([/^_ga/, '_gid'], '/', '.' + host);
+        }
+        if (changed.length) window.location.reload();
+      },
+      guiOptions: {
+        consentModal: { layout: 'box', position: 'bottom left', equalWeightButtons: true },
+        preferencesModal: { layout: 'box', equalWeightButtons: true },
+      },
+      categories: {
+        necessary: { enabled: true, readOnly: true },
+        analytics: { autoClear: { cookies: [{ name: /^_ga/ }, { name: '_gid' }] } },
+      },
+      language: {
+        default: 'en',
+        translations: {
+          en: {
+            consentModal: {
+              title: 'Privacy settings',
+              description: 'I would like to use Google Analytics to see how this site is used. It is only loaded with your consent. You can change your choice at any time via “Cookie settings” in the footer.',
+              acceptAllBtn: 'Accept',
+              acceptNecessaryBtn: 'Necessary only',
+              showPreferencesBtn: 'Settings',
+              footer: privacy ? '<a href="' + privacy + '">Privacy policy</a>' : '',
+            },
+            preferencesModal: {
+              title: 'Cookie settings',
+              acceptAllBtn: 'Accept all',
+              acceptNecessaryBtn: 'Necessary only',
+              savePreferencesBtn: 'Save choices',
+              closeIconLabel: 'Close',
+              sections: [
+                { title: 'Necessary', description: 'Remembers your privacy choice for six months. Always on.', linkedCategory: 'necessary' },
+                { title: 'Statistics (Google Analytics)', description: 'Helps me see how many people visit the site and which pages they read. Only loaded if you agree; data may be processed in the USA.', linkedCategory: 'analytics' },
+                { title: 'More information', description: privacy ? 'Details, including the cookies used, are in the <a href="' + privacy + '">privacy policy</a>.' : '' },
+              ],
+            },
+          },
+        },
+      },
+    });
+  });
+</script>
