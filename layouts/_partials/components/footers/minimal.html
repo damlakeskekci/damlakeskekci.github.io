@@ -18,7 +18,7 @@
 {{ with site.GetPage "/privacy" }}{{ $legal = $legal | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}
 {{ with site.GetPage "/impressum" }}{{ $legal = $legal | append (printf "<a href=\"%s\">%s</a>" .RelPermalink .Title) }}{{ end }}
 {{ if site.Params.hugoblox.analytics.google.measurement_id }}
-  {{ $legal = $legal | append `<button type="button" class="cc-settings-link" data-cc="show-preferencesModal">Cookie settings</button>` }}
+  {{ $legal = $legal | append (printf `<button type="button" class="cc-settings-link" data-cc="show-preferencesModal">%s</button>` (i18n "privacy_settings")) }}
 {{ end }}
 {{ with $legal }}
 <p class="text-center">{{ delimit . " &middot; " | safeHTML }}</p>

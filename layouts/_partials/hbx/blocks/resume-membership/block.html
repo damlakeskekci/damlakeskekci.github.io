@@ -3,7 +3,8 @@
 {{/* Match the structure and styling of the built-in resume-skills block,
     but use `membership` from data/authors/<username>.yaml instead. */}}
 
-{{ $block := . }}
+{{/* Hugo Blox passes the block settings as .wcBlock (same as the built-in resume-skills block) */}}
+{{ $block := .wcBlock | default . }}
 {{ $content := $block.content }}
 
 {{/* Username/slug, matching data/authors/<username>.yaml */}}
@@ -11,6 +12,8 @@
 
 {{/* Load author data (where `membership` lives) */}}
 {{ $author := index site.Data.authors $username }}
+{{/* Use the translated memberships on non-English pages (data/authors_i18n/<lang>/<username>.yaml) */}}
+{{ with index site.Data "authors_i18n" }}{{ with index . site.Language.Lang }}{{ with index . $username }}{{ $author = merge $author . }}{{ end }}{{ end }}{{ end }}
 
 {{/* Default title if none set in cv.md */}}
 {{ $title := or $content.title "Memberships" }}

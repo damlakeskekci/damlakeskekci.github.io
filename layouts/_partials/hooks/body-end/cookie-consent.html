@@ -5,6 +5,8 @@
 */}}
 {{ $privacy := site.GetPage "/privacy" }}
 {{ $privacy_url := cond (ne $privacy nil) ($privacy.RelPermalink) "" }}
+{{ $impressum := site.GetPage "/impressum" }}
+{{ $impressum_url := cond (ne $impressum nil) ($impressum.RelPermalink) "" }}
 <link rel="stylesheet" href="{{ "lib/cookieconsent/cookieconsent.css" | relURL }}" integrity="sha256-ygRrixsQlBByBZiOcJamh7JByO9fP+/l5UPtKNJmRsE=">
 <style>
   #cc-main, .cc--darkmode #cc-main {
@@ -31,6 +33,11 @@
     new MutationObserver(syncDark).observe(root, { attributes: true, attributeFilter: ['class'] });
 
     var privacy = '{{ $privacy_url }}';
+    var impressum = '{{ $impressum_url }}';
+    var links = [];
+    var lang = '{{ site.Language.Lang }}' === 'de' ? 'de' : 'en';
+    if (privacy) links.push('<a href="' + privacy + '">' + (lang === 'de' ? 'Datenschutzerklärung' : 'Privacy policy') + '</a>');
+    if (impressum) links.push('<a href="' + impressum + '">' + (lang === 'de' ? 'Impressum' : 'Legal notice') + '</a>');
 
     CookieConsent.run({
       revision: 1,
@@ -55,27 +62,49 @@
         analytics: { autoClear: { cookies: [{ name: /^_ga/ }, { name: '_gid' }] } },
       },
       language: {
-        default: 'en',
+        default: lang,
         translations: {
-          en: {
+          de: {
             consentModal: {
-              title: 'Privacy settings',
-              description: 'I would like to use Google Analytics to see how this site is used. It is only loaded with your consent. You can change your choice at any time via “Cookie settings” in the footer.',
-              acceptAllBtn: 'Accept',
-              acceptNecessaryBtn: 'Necessary only',
-              showPreferencesBtn: 'Settings',
-              footer: privacy ? '<a href="' + privacy + '">Privacy policy</a>' : '',
+              title: 'Darf ich Ihren Besuch zählen?',
+              description: 'Mit Ihrer Erlaubnis nutze ich Google Analytics, um zu sehen, wie viele Menschen diese Website besuchen und welche Seiten sie lesen. Ohne Ihre Zustimmung wird nichts gezählt. Sie können Ihre Entscheidung jederzeit unter „Datenschutz-Einstellungen“ unten auf der Seite ändern.',
+              acceptAllBtn: 'Erlauben',
+              acceptNecessaryBtn: 'Nicht erlauben',
+              showPreferencesBtn: 'Weitere Optionen',
+              footer: links.join(' '),
             },
             preferencesModal: {
-              title: 'Cookie settings',
-              acceptAllBtn: 'Accept all',
-              acceptNecessaryBtn: 'Necessary only',
-              savePreferencesBtn: 'Save choices',
+              title: 'Datenschutz-Einstellungen',
+              acceptAllBtn: 'Alle erlauben',
+              acceptNecessaryBtn: 'Nicht erlauben',
+              savePreferencesBtn: 'Auswahl speichern',
+              closeIconLabel: 'Schließen',
+              sections: [
+                { title: 'Meine Antwort merken', description: 'Speichert Ihre Antwort für sechs Monate, damit Sie nicht auf jeder Seite erneut gefragt werden. Immer aktiv.', linkedCategory: 'necessary' },
+                { title: 'Besuchsstatistik (Google Analytics)', description: 'Zählt Besuche und zeigt, welche Seiten gelesen werden, damit ich weiß, was für Besucherinnen und Besucher nützlich ist. Google kann diese Informationen in den USA verarbeiten.', linkedCategory: 'analytics' },
+                { title: 'Weitere Informationen', description: privacy ? 'Die Einzelheiten finden Sie in der <a href="' + privacy + '">Datenschutzerklärung</a>.' : '' },
+              ],
+            },
+          },
+          en: {
+            consentModal: {
+              title: 'May I count your visit?',
+              description: 'With your permission, I use Google Analytics to see how many people visit this site and which pages they read. Nothing is counted unless you allow it, and you can change your mind at any time under “Privacy settings” at the bottom of the page.',
+              acceptAllBtn: 'Allow',
+              acceptNecessaryBtn: 'Don’t allow',
+              showPreferencesBtn: 'More options',
+              footer: links.join(' '),
+            },
+            preferencesModal: {
+              title: 'Privacy settings',
+              acceptAllBtn: 'Allow all',
+              acceptNecessaryBtn: 'Don’t allow',
+              savePreferencesBtn: 'Save my choice',
               closeIconLabel: 'Close',
               sections: [
-                { title: 'Necessary', description: 'Remembers your privacy choice for six months. Always on.', linkedCategory: 'necessary' },
-                { title: 'Statistics (Google Analytics)', description: 'Helps me see how many people visit the site and which pages they read. Only loaded if you agree; data may be processed in the USA.', linkedCategory: 'analytics' },
-                { title: 'More information', description: privacy ? 'Details, including the cookies used, are in the <a href="' + privacy + '">privacy policy</a>.' : '' },
+                { title: 'Remember my answer', description: 'Saves your answer for six months so you are not asked again on every page. Always on.', linkedCategory: 'necessary' },
+                { title: 'Visitor statistics (Google Analytics)', description: 'Counts visits and shows which pages are read, so I know what people find useful. Google may process this information in the USA.', linkedCategory: 'analytics' },
+                { title: 'More information', description: privacy ? 'You can read the details in the <a href="' + privacy + '">privacy policy</a>.' : '' },
               ],
             },
           },

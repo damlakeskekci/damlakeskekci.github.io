@@ -1,0 +1,105 @@
+# German version of data/authors/me.yaml.
+# Only the fields that need translating are here; everything else (name, links,
+# avatar, dates) is taken from data/authors/me.yaml. Lists (education, experience,
+# skills, ...) replace the English lists as a whole, so keep them in the same order.
+
+role: Soziologin
+bio: |
+  Ich habe vor Kurzem meine Promotion in Politikwissenschaft und Soziologie an der Scuola Normale Superiore in Florenz abgeschlossen. Davor habe ich zwei Masterstudiengänge an der Freien Universität Berlin (Soziologie – Europäische Gesellschaften) und an der Humboldt-Universität zu Berlin (MA Research Training Program in Social Sciences) absolviert und meinen Bachelor in Soziologie mit Nebenfach Politikwissenschaft und Öffentliche Verwaltung an der Hacettepe-Universität in Ankara erworben. Forschungsaufenthalte führten mich an die Humboldt-Universität zu Berlin, das WZB Berlin Social Science Center, die Universität Göteborg, das DeZIM-Institut und die Universität Bremen.
+
+links:
+  - icon: at-symbol
+    url: mailto:damla.keskekci@sns.it
+    label: E-Mail schreiben
+  - icon: brands/bluesky
+    url: https://bsky.app/profile/damlakeskekci.bsky.social
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/damlakeskekci/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=P6AGcLkAAAAJ&hl=en&oi=ao
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0003-4306-463X
+
+interests:
+  - Extreme Rechte in Westeuropa
+  - Soziale Bewegungen
+  - Textanalyse
+  - Netzwerkanalyse
+  - Inhaltsanalyse
+
+education:
+  - degree: Promotion (Ph.D.) in Politikwissenschaft und Soziologie
+    institution: Scuola Normale Superiore
+    end: '2025-11-15'
+    summary: |
+      Dissertation: *Dynamics of Far-Right Transnationalization*
+  - degree: MA Research Training Program in Social Sciences
+    institution: Humboldt-Universität zu Berlin
+    start:
+    end: '2019-10-31'
+  - degree: MA Soziologie – Europäische Gesellschaften
+    institution: Freie Universität Berlin
+    start:
+    end: '2018-07-31'
+  - degree: BA Soziologie (Nebenfach Politikwissenschaft und Öffentliche Verwaltung)
+    institution: Hacettepe Üniversitesi
+    icon: ''
+    location: Ankara, Türkei
+    end: '2015-06-25'
+
+experience:
+  - role: Erasmus+-Praktikum
+    org: Humboldt-Universität zu Berlin
+    location: Berlin, Deutschland
+    start: '2024-04-01'
+    end: '2024-09-15'
+    summary: |
+      [Lehrbereich Politische Soziologie und Sozialpolitik](https://www.sowi.hu-berlin.de/de/lehrbereiche/sozpol)
+  - role: Wissenschaftliche Mitarbeiterin
+    org: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
+    location: Berlin, Deutschland
+    start: '2021-03-01'
+    end: '2024-03-01'
+    summary: |
+      [RaMi – Vom Rand in die Mitte: Rechtspopulistische Deutungen des (radikalen) Islams als gesellschaftliche Herausforderung in Europa und darüber hinaus](https://www.dezim-institut.de/institut/abteilung-konsens-konflikt/right-wing-populist-interpretations-of-radical-islam-as-a-societal-challenge-in-europe-and-beyond-rami/)
+  - role: Studentische Hilfskraft
+    org: Deutsches Zentrum für Integrations- und Migrationsforschung (DeZIM)
+    location: Berlin, Deutschland
+    start: '2018-11-01'
+    end: '2019-10-01'
+    summary: |
+      [Abteilung Konsens & Konflikt](https://www.dezim-institut.de/en/institute/consensus-and-conflict-department/)
+  - role: Studentische Hilfskraft
+    org: WZB Berlin Social Science Center
+    location: Berlin, Deutschland
+    start: '2016-09-01'
+    end: '2017-10-01'
+    summary: |
+      [Abteilung Global Governance](https://www.wzb.eu/de/forschung/internationale-politik-und-recht/global-governance)
+
+skills:
+  - name: Methoden
+    items:
+      - label: Computational Social Science
+      - label: Netzwerkanalyse
+      - label: Quantitative und qualitative Inhaltsanalyse
+      - label: Text-as-Data
+  - name: Sprachen
+    items:
+      - label: Türkisch (Muttersprache / C2)
+      - label: Englisch (C2)
+      - label: Deutsch (B2/C1)
+
+membership:
+  - name: Centre on Social Movement Studies (COSMOS)
+    url: https://cosmos.sns.it/person/damla-keskekci/
+  - name: Institut für Protest- und Bewegungsforschung (Vorstand)
+    url: https://protestinstitut.eu/mitglieder/11292/
+
+languages:
+  - name: Türkisch
+    label: Muttersprache
+  - name: Englisch
+    label: Fließend
+  - name: Deutsch
+    label: Fortgeschritten

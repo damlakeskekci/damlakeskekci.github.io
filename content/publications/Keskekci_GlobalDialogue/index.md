@@ -11,6 +11,12 @@ publication_short: ""
 abstract: Far-right actors increasingly try to present themselves as normal, legitimate players in mainstream politics. Drawing on a study of how German far-right actors – from parties to alternative media and social movements – use hyperlinks on Facebook, this article shows how they adapt to platform rules, share mainstream media content to borrow credibility, and link out to sites that are harder to moderate. It argues that the recent loosening of content moderation, such as Meta ending third-party fact-checking in January 2025, may strengthen these dynamics, and calls for treating social media companies as profit-driven actors with political stakes of their own.
 tags:
 featured: true
+# Featured image: issue cover (shown in publication lists only)
+image:
+  focal_point: Top
+  preview_only: true
+  alt_text: "Cover of Global Dialogue, volume 15, issue 2"
+
 links:
   - name: Global Dialogue
     url: https://globaldialogue.isa-sociology.org/articles/from-the-margins-to-the-feed-platformed-mainstreaming-of-the-far-right

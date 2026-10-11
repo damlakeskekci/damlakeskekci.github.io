@@ -1,0 +1,17 @@
+# Navigation (Deutsch)
+main:
+  - name: Start
+    pageRef: /
+    weight: 10
+  - name: Lebenslauf
+    pageRef: /cv
+    weight: 11
+  - name: Publikationen
+    pageRef: /publications
+    weight: 12
+  - name: Lehre
+    pageRef: /teaching
+    weight: 13
+  - name: Kontakt
+    pageRef: /contact
+    weight: 20

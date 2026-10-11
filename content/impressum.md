@@ -1,11 +1,12 @@
 ---
-# DRAFT – not published until `draft: true` is removed. Fill in the address first.
 title: Legal notice
 date: 2026-10-11
 type: landing
-draft: true
-sitemap:
-  disable: true
+# Keep out of the sitemap and search engines (theme's 'private' flag)
+private: true
+# Not listed in the page side menu
+sidebar:
+  hidden: true
 
 sections:
   - block: markdown
@@ -15,9 +16,11 @@ sections:
         ### Information pursuant to § 5 DDG
 
         Dr. Damla Keşkekci  
-        [STREET AND NUMBER]  
-        [POSTCODE CITY]  
-        [COUNTRY]
+        Faculty of Political and Social Sciences  
+        Scuola Normale Superiore  
+        Palazzo Strozzi, Piazza degli Strozzi  
+        50123 Firenze  
+        Italy
 
         ### Contact
 
@@ -29,7 +32,7 @@ sections:
 
         ### Note
 
-        This is my personal academic website. Information on how data is processed on this site can be found in the [privacy policy](/privacy/).
+        This is my personal academic website. It is not an official website of the Scuola Normale Superiore. Information on how data is processed on this site can be found in the [privacy policy](/privacy/).
     design:
       columns: '1'
 ---

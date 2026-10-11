@@ -1,22 +1,20 @@
 # Languages
-#   Create a section for each of your site's languages.
+#   English is the default and lives at /; German lives at /de/.
+#   Translated pages sit next to the English ones with a .de.md suffix (e.g. cv.de.md).
 #   Documentation: https://docs.hugoblox.com/reference/language/
 
-# Default language
 en:
-  languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  locale: en-us
+  label: English
+  weight: 1
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+de:
+  locale: de-de
+  label: Deutsch
+  weight: 2
+  params:
+    hugoblox:
+      identity:
+        description: "Persönliche Website von Dr. Damla Keşkekci"
+      locale:
+        date_format: "2. January 2006"

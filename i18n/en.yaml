@@ -1,3 +1,5 @@
-# Site-level label overrides for the Hugo Blox theme
+# Site-level label overrides for the Hugo Blox theme (English)
 - id: pub_article_magazine
   translation: Magazine article
+- id: privacy_settings
+  translation: Privacy settings

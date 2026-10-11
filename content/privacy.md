@@ -2,8 +2,11 @@
 title: Privacy policy
 date: 2026-10-11
 type: landing
-sitemap:
-  disable: true
+# Keep out of the sitemap and search engines (theme's 'private' flag)
+private: true
+# Not listed in the page side menu
+sidebar:
+  hidden: true
 
 sections:
   - block: markdown
@@ -14,7 +17,7 @@ sections:
 
         ### 1. Controller
 
-        Dr. Damla Keşkekci. Email: [damla.keskekci@sns.it](mailto:damla.keskekci@sns.it).
+        Dr. Damla Keşkekci, Faculty of Political and Social Sciences, Scuola Normale Superiore, Palazzo Strozzi, Piazza degli Strozzi, 50123 Firenze, Italy. Email: [damla.keskekci@sns.it](mailto:damla.keskekci@sns.it). See also the [legal notice](/impressum/).
 
         ### 2. Hosting (GitHub Pages)
 
@@ -24,15 +27,15 @@ sections:
 
         ### 3. Consent cookie
 
-        When you make a choice in the privacy banner, it is stored in a cookie called “cc_cookie” in your browser for six months, so that the banner does not reappear on every page. This is strictly necessary to remember your choice (§ 25(2) no. 2 TDDDG; Art. 6(1)(c) and (f) GDPR).
+        When you answer the privacy question shown on your first visit, your answer is stored in a cookie called “cc_cookie” in your browser for six months, so that the banner does not reappear on every page. This is strictly necessary to remember your choice (§ 25(2) no. 2 TDDDG; Art. 6(1)(c) and (f) GDPR).
 
-        You can change or withdraw your consent at any time: <button type="button" class="cc-settings-link" data-cc="show-preferencesModal">open cookie settings</button>.
+        You can change or withdraw your consent at any time: <button type="button" class="cc-settings-link" data-cc="show-preferencesModal">open privacy settings</button>.
 
         ### 4. Google Analytics (only with your consent)
 
-        If you accept "Statistics", this website uses Google Analytics 4, a web analytics service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics uses cookies (“_ga” and “_ga_*”, stored for up to two years) to recognise your browser and to produce aggregated statistics on how the site is used (for example pages visited, time spent, device type and approximate location). According to Google, Google Analytics 4 does not log or store IP addresses. The data may be transferred to Google LLC in the USA; Google LLC is certified under the EU-U.S. Data Privacy Framework.
+        If you allow "Visitor statistics", this website uses Google Analytics 4, a web analytics service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. Google Analytics uses cookies (“_ga” and “_ga_*”, stored for up to two years) to recognise your browser and to produce aggregated statistics on how the site is used (for example pages visited, time spent, device type and approximate location). According to Google, Google Analytics 4 does not log or store IP addresses. The data may be transferred to Google LLC in the USA; Google LLC is certified under the EU-U.S. Data Privacy Framework.
 
-        The legal basis is your consent (Art. 6(1)(a) GDPR; § 25(1) TDDDG). Google Analytics is not loaded at all unless you consent, and you can withdraw your consent at any time with effect for the future via "Cookie settings" in the footer. Further information: [Google Privacy Policy](https://policies.google.com/privacy) and [Google Analytics data practices](https://support.google.com/analytics/answer/6004245).
+        The legal basis is your consent (Art. 6(1)(a) GDPR; § 25(1) TDDDG). Google Analytics is not loaded at all unless you consent, and you can withdraw your consent at any time with effect for the future via "Privacy settings" at the bottom of every page. Further information: [Google Privacy Policy](https://policies.google.com/privacy) and [Google Analytics data practices](https://support.google.com/analytics/answer/6004245).
 
         ### 5. External links
 

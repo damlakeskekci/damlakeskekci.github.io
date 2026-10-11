@@ -1,5 +1,7 @@
 ---
 title: "Dynamics Of Far-Right Mobilization in Western Europe"
+# Short summary for search engines, social media and the list page
+description: "Seminar at Humboldt-Universität zu Berlin (Summer Semester 2024) on far-right mobilization in Western Europe and its transnationalization."
 subtitle: "Humboldt-Universität zu Berlin (Summer Semester 2024)"
 #location: "Humboldt"
 #summary: "Humboldt"
@@ -22,6 +24,9 @@ publication: ""
 publication_short: ""
 
 abstract: <b>Humboldt-Universität zu Berlin (Summer Semester 2024)</b> <br> <br> This seminar aims to provide the participants with a general yet inclusive outline of the contemporary research on far-right mobilization in Western Europe, with a focus on its potential for transnationalization, or in other words, transnational diffusion. Following a social movements perspective, this seminar looks at various far-right actor types and their multifaceted online and offline mobilization strategies for purposes such as becoming transnational. The seminar is especially suitable for those who are willing to learn about the definitions of the far-right, mobilization theories and the far-right, the process of transnationalization for (far-right) social and political mobilizations, and the historical trajectory of far-right mobilization in Western Europe. Participants will also gain a comprehensive insight into various research methods used for exploring far-right mobilization and transnationalization. Key objectives of the seminar include equipping students with the analytical tools to dissect far-right politics and mobilization both theoretically and empirically. At the end of the seminar, by critically engaging with diverse interdisciplinary perspectives and case studies, students will develop a nuanced understanding of far-right mobilization and its potential transnationalization, as well as the implications of these processes for liberal democracy.
+
+image:
+  alt_text: "Facade of a Humboldt-Universität zu Berlin building"
 
 tags: 
 featured: false

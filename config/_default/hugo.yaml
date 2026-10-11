@@ -37,9 +37,12 @@ outputs:
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 90
   anchor: smart
-  hint: picture
+  jpeg:
+    quality: 90
+  webp:
+    quality: 90
+    hint: picture
 timeout: 600000
 taxonomies:
   author: authors
@@ -51,5 +54,8 @@ markup:
     lineNos: false
 security:
   _merge: deep
+  exec:
+    # Hugo >= 0.164 no longer allows the Tailwind CSS CLI by default; the theme needs it.
+    allow: ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']
 sitemap:
   _merge: deep
