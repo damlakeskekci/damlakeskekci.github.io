@@ -1,0 +1,3 @@
+# Site-level label overrides for the Hugo Blox theme
+- id: pub_article_magazine
+  translation: Magazine article

@@ -93,7 +93,7 @@ hugoblox:
     # deploy does not build, so it always showed "No results found".
     search: false
     theme_toggle: true
-    theme_picker: true
+    theme_picker: false
     language_switcher: true
     # Call-to-action button
     cta:

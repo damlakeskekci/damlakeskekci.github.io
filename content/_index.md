@@ -38,7 +38,7 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: '🔍 My Research'
       subtitle: ''
       text: |-
         My research lies at the intersection of political sociology and (digital) media/communication studies. I am a mixed-methods researcher with a particular interest in content analysis (especially text analysis) and network analysis.
@@ -59,7 +59,7 @@ sections:
 #      columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: '📚 Recent Publications'
       text: ''
       filters:
         folders:
